@@ -1,0 +1,20 @@
+.structure-card {
+    width: 300px;
+    background-color: lightgray;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.pokemon-img {
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemons-name {
+    font-size: 25px;
+    font: bold;
+    display: flex;
+    justify-content: center;
+}
