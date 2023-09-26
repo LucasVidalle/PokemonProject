@@ -1,11 +1,10 @@
 .all-content {
   background-color: white;
-  margin: 20px;
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
-  gap: 10px;
-  padding-left: 75px;
+  gap: 22px;
+  justify-content: center;
 }

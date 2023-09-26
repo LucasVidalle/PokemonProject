@@ -1,20 +1,31 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
 .structure-card {
     width: 300px;
     background-color: lightgray;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.structure-card:hover {
+    background-color: red;
+    transform: scale(1.1, 1.1);
+    border: solid 1.5px black;
 }
 
 .pokemon-img {
-    width: 200px;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .pokemons-name {
-    font-size: 25px;
-    font: bold;
+    font-size: 22px;
     display: flex;
     justify-content: center;
+    font-family: 'Pokemon Solid', sans-serif;
+    text-transform: capitalize;
 }
