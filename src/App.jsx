@@ -8,10 +8,7 @@ function App() {
   return (
     <div className='all-content'>
       <Nav />
-      <div className='cards-container'>
-        <Card />
-      </div>
-
+      <Card />
     </div>
   )
 }

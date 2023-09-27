@@ -1,5 +1,52 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 
+.search-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    display: flex;
+    justify-content: start;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-right: 800px;
+}
+
+.input-search {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    border: solid 1.5px black;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: 0.5s;
+}
+
+.input-search:hover {
+    border: solid 3.5px red;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    gap: 22px;
+    justify-content: center;
+}
+
 .structure-card {
     width: 300px;
     background-color: lightgray;
