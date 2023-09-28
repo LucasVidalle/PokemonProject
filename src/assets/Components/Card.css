@@ -14,7 +14,7 @@
     justify-content: start;
     margin-top: 0px;
     margin-bottom: 5px;
-    padding-right: 800px;
+    padding-right: 56%;
 }
 
 .input-search {
@@ -75,4 +75,37 @@
     justify-content: center;
     font-family: 'Pokemon Solid', sans-serif;
     text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1360px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        gap: 22px;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 22px;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 300px;
+        gap: 22px;
+        justify-content: center;
+    }
+
 }
