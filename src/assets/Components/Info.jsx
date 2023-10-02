@@ -5,19 +5,19 @@ function Info() {
         <div className="info-card-structure">
             <div className="top-card">
                 <div className="options">
-                    <img src="https://iconos8.es/icon/lZr3lzC4YVG1/izquierda" />
-                    <img src="https://iconos8.es/icon/87/me-gusta" />
+                    <img src="icons8-izquierda-50.png" />
+                    <img src="icons8-me-gusta-50.png" />
                 </div>
                 <div className="pokemon-zone">
+                    <h2 className="poke-name">Nombre Pokemon</h2>
                     <div className="main-info">
-                        <h2 className="poke-name">Nombre Pokemon</h2>
                         <div className="types">
                             <p className="type-name">fire</p>
                         </div>
-                    </div>
-                    <div className="index">
-                        <p className="pokedex-num">poke index</p>
-                        <p className="seed">Seed</p>
+                        <div className="index">
+                            <p className="pokedex-num">poke index</p>
+                            <p className="seed">Seed</p>
+                        </div>
                     </div>
                     <div className="pokemon-info-img">
                         <img className="pokemon-img" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png`} />
