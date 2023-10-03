@@ -1,8 +1,13 @@
 .info-card-structure {
+    background-color: #545493;
     width: 60%;
     height: 90%;
     border: solid 3px black;
     margin-top: 10px;
+}
+
+.top-card {
+    background-color: #545493;
 }
 
 .options {
@@ -37,6 +42,132 @@
     width: auto
 }
 
+.under-card {
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+}
+
 .pokemon-sections-button {
+    padding-top: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons-container {
+    margin-right: 20px;
+    width: 20%;
+    height: 70px;
+}
+
+.buttons-content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.buttons-content:hover {
+    border-bottom: solid 3px #545493;
+    font-weight: bold;
+}
+
+.base-stats {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    padding-left: 5%;
+}
+
+.stats-names-container {
+    height: 258px;
+    background-color: red;
+}
+
+.stats-num-container {
+    padding-left: 5%;
+    height: 258px;
+    background-color: blue;
+}
+
+.stats-bar {
+    margin: 16px 0px 16px 5%;
+    height: 5%;
+    width: 300px;
+    background-color: lightgray;
+    border: solid 0.5px black;
+    border-radius: 20px;
+}
+
+.hp-bar {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 26px;
+    font-size: 10px;
+    width: 30%;
+}
+
+.attack-bar {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 26px;
+    font-size: 10px;
+    width: 30%;
+}
+
+.defense-bar {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 26px;
+    font-size: 10px;
+    width: 30%;
+}
+
+.sp-atk-bar {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 26px;
+    font-size: 10px;
+    width: 30%;
+}
+
+.sp-def-bar {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 26px;
+    font-size: 10px;
+    width: 30%;
+}
+
+.speed-bar {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 26px;
+    font-size: 10px;
+    width: 30%;
+}
+
+.total-bar {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 26px;
+    font-size: 10px;
+    width: 30%;
 }

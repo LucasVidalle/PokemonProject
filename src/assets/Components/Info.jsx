@@ -26,17 +26,17 @@ function Info() {
             </div>
             <div className="under-card">
                 <div className="pokemon-sections-button">
-                    <div className="about">
-                        <button>Aboutt</button>
+                    <div className="buttons-container">
+                        <button className="buttons-content">Aboutt</button>
                     </div>
-                    <div className="base-stats-button">
-                        <button>Base Stats</button>
+                    <div className="buttons-container">
+                        <button className="buttons-content">Base Stats</button>
                     </div>
-                    <div className="evolution-button">
-                        <button>Evolution</button>
+                    <div className="buttons-container">
+                        <button className="buttons-content">Evolution</button>
                     </div>
-                    <div className="Moves-button">
-                        <button>Moves</button>
+                    <div className="buttons-container">
+                        <button className="buttons-content">Moves</button>
                     </div>
                 </div>
                 <div className="base-stats">
@@ -58,27 +58,27 @@ function Info() {
                         <p className="stats-nums">30</p>
                         <p className="stats-nums">100</p>
                     </div>
-                    <div className="stats-bar">
+                    <div className="stats-bar-container">
                         <div className="stats-bar">
-                            <div className="hp-bar"></div>
+                            <div className="hp-bar"><p>Hola</p></div>
                         </div>
                         <div className="stats-bar">
-                            <div className="attack-bar"></div>
+                            <div className="attack-bar"><p>Hola</p></div>
                         </div>
                         <div className="stats-bar">
-                            <div className="defense-bar"></div>
+                            <div className="defense-bar"><p>Hola</p></div>
                         </div>
                         <div className="stats-bar">
-                            <div className="sp-atk-bar"></div>
+                            <div className="sp-atk-bar"><p>Hola</p></div>
                         </div>
                         <div className="stats-bar">
-                            <div className="sp-def-bar"></div>
+                            <div className="sp-def-bar"><p>Hola</p></div>
                         </div>
                         <div className="stats-bar">
-                            <div className="speed-bar"></div>
+                            <div className="speed-bar"><p>Hola</p></div>
                         </div>
                         <div className="stats-bar">
-                            <div className="total-bar"></div>
+                            <div className="total-bar"><p>Hola</p></div>
                         </div>
                     </div>
                 </div>
