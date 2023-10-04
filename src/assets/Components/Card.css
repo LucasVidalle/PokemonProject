@@ -58,7 +58,7 @@
 .structure-card:hover {
     background-color: red;
     transform: scale(1.1, 1.1);
-    border: solid 1.5px black;
+    border: solid 1.5z px black;
 }
 
 .pokemon-img {

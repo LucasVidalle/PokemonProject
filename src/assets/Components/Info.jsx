@@ -1,6 +1,15 @@
 import "./Info.css"
+import { useState, useEffect } from "react";
 
 function Info() {
+    const [pokemonData, setPokemonData] = useState();
+    const pokemonApi = "https://pokeapi.co/api/v2/pokemon/445";
+    useEffect(() => {
+        fetch(pokemonApi)
+            .then((response) => response.json())
+            .then((data) => setPokemonData(data));
+    }, []);
+    console.log(pokemonData?.stats)
     return (
         <div className="info-card-structure">
             <div className="top-card">
@@ -9,18 +18,18 @@ function Info() {
                     <img src="icons8-me-gusta-50.png" />
                 </div>
                 <div className="pokemon-zone">
-                    <h2 className="poke-name">Nombre Pokemon</h2>
+                    <h2 className="poke-name">a</h2>
                     <div className="main-info">
                         <div className="types">
-                            <p className="type-name">fire</p>
+                            <p className="type-name">a</p>
                         </div>
                         <div className="index">
-                            <p className="pokedex-num">poke index</p>
+                            <p className="pokedex-num">a</p>
                             <p className="seed">Seed</p>
                         </div>
                     </div>
                     <div className="pokemon-info-img">
-                        <img className="pokemon-img" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png`} />
+                        <img className="pokemon-img" src="" />
                     </div>
                 </div>
             </div>
@@ -40,45 +49,65 @@ function Info() {
                     </div>
                 </div>
                 <div className="base-stats">
-                    <div className="stats-names-container">
-                        <p className="stats-names">Hp</p>
-                        <p className="stats-names">Attack</p>
-                        <p className="stats-names">Defense</p>
-                        <p className="stats-names">Sp. Atk</p>
-                        <p className="stats-names">Sp. Def</p>
-                        <p className="stats-names">Speed</p>
-                        <p className="stats-names">Total</p>
+                    <p className="stat-name">Hp</p>
+                    <p className="stat-num">20</p>
+                    <div className="bar-container">
+                        <div className="stat-bar">
+                            <div className="inside-stat-bar"></div>
+                        </div>
                     </div>
-                    <div className="stats-num-container">
-                        <p className="stats-nums">20</p>
-                        <p className="stats-nums">30</p>
-                        <p className="stats-nums">20</p>
-                        <p className="stats-nums">30</p>
-                        <p className="stats-nums">30</p>
-                        <p className="stats-nums">30</p>
-                        <p className="stats-nums">100</p>
+                </div>
+                <div className="attack">
+                    <p className="stat-name">Attack</p>
+                    <p className="stat-num">30</p>
+                    <div className="bar-container">
+                        <div className="stat-bar">
+                            <div className="inside-stat-bar"></div>
+                        </div>
                     </div>
-                    <div className="stats-bar-container">
-                        <div className="stats-bar">
-                            <div className="hp-bar"><p>Hola</p></div>
+                </div>
+                <div className="defense">
+                    <p className="stat-name">Defense</p>
+                    <p className="stat-num">20</p>
+                    <div className="bar-container">
+                        <div className="stat-bar">
+                            <div className="inside-stat-bar"></div>
                         </div>
-                        <div className="stats-bar">
-                            <div className="attack-bar"><p>Hola</p></div>
+                    </div>
+                </div>
+                <div className="spAttack">
+                    <p className="stat-name">Sp. Atk</p>
+                    <p className="stat-num">30</p>
+                    <div className="bar-container">
+                        <div className="stat-bar">
+                            <div className="inside-stat-bar"></div>
                         </div>
-                        <div className="stats-bar">
-                            <div className="defense-bar"><p>Hola</p></div>
+                    </div>
+                </div>
+                <div className="spDefense">
+                    <p className="stat-name">Sp. Def</p>
+                    <p className="stat-num">30</p>
+                    <div className="bar-container">
+                        <div className="stat-bar">
+                            <div className="inside-stat-bar"></div>
                         </div>
-                        <div className="stats-bar">
-                            <div className="sp-atk-bar"><p>Hola</p></div>
+                    </div>
+                </div>
+                <div className="speed">
+                    <p className="stat-name">Speed</p>
+                    <p className="stat-num">30</p>
+                    <div className="bar-container">
+                        <div className="stat-bar">
+                            <div className="inside-stat-bar"></div>
                         </div>
-                        <div className="stats-bar">
-                            <div className="sp-def-bar"><p>Hola</p></div>
-                        </div>
-                        <div className="stats-bar">
-                            <div className="speed-bar"><p>Hola</p></div>
-                        </div>
-                        <div className="stats-bar">
-                            <div className="total-bar"><p>Hola</p></div>
+                    </div>
+                </div>
+                <div className="total">
+                    <p className="stat-name">Total</p>
+                    <p className="stat-num">100</p>
+                    <div className="bar-container">
+                        <div className="stat-bar">
+                            <div className="inside-stat-bar"></div>
                         </div>
                     </div>
                 </div>
